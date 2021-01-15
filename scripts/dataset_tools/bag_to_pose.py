@@ -28,6 +28,13 @@ def extract(bagfile, pose_topic, msg_type, out_filename):
                          msg.pose.position.z,
                          msg.pose.orientation.x, msg.pose.orientation.y,
                          msg.pose.orientation.z, msg.pose.orientation.w))
+            elif msg_type == "Odometry":
+                f.write('%.12f %.12f %.12f %.12f %.12f %.12f %.12f %.12f\n' %
+                        (msg.header.stamp.to_sec(),
+                         msg.pose.pose.position.x, msg.pose.pose.position.y,
+                         msg.pose.pose.position.z,
+                         msg.pose.pose.orientation.x, msg.pose.pose.orientation.y,
+                         msg.pose.pose.orientation.z, msg.pose.pose.orientation.w))
             else:
                 assert False, "Unknown message type"
             n += 1
