@@ -1,0 +1,21 @@
+
+# local backup files
+*.BAK
+
+# vim swap files
+*.swp
+*.swo
+
+# extra large files
+*.bag
+
+# CodeBlocks temporary files
+*.layout
+*.depend
+
+# PyCharm bullshit
+.idea
+
+# python cache
+*.pyc
+
