@@ -83,7 +83,7 @@ class MulTrajError(object):
         if self.n_traj == 0:
             return
         print("Relative errors numbers:")
-        for d, e in self.rel_errors.iteritems():
+        for d, e in self.rel_errors.items():
             print("- {0}: {1} {2} samples".format(d, e.keys(),
                                                   e['rel_trans'].size))
 

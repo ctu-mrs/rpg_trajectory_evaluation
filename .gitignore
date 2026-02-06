@@ -1,1 +1,19 @@
+# local backup files
+*.BAK
+
+# vim swap files
+*.swp
+*.swo
+
+# extra large files
+*.bag
+
+# CodeBlocks temporary files
+*.layout
+*.depend
+
+.idea
+
+# python cache
 *.pyc
+
