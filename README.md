@@ -1,5 +1,9 @@
 # rpg_trajectory_evaluation
 
+This is a fork of the original [rpg_trajectory_evaluation](https://github.com/uzh-rpg/rpg_trajectory_evaluation) repository with a few minor updates enabling the usage with Python 3, processing `nav_msgs/Odometry` messages, etc. If you use this package in your work, please cite the original authors.
+
+## About
+
 This repository implements common used trajectory evaluation methods for visual(-inertial) odometry. Specifically, it includes
 * Different trajectory alignment methods (rigid-body, similarity and yaw-only rotation)
 * Commonly used error metrics: Absolute Trajectory Error (ATE) and Relative/Odometry Error (RE)
